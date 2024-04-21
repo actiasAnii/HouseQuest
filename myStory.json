@@ -1,58 +1,142 @@
 {
-    "Title": "Campus Life on the West Side",
-    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
-    "InitialLocation": "Kresge",
+    "Title": "House Quest",
+    "Credits": "Template created by Adam Smith (amsmith@ucsc.edu). Modified by Anais Montes",
+    "InitialLocation": "Your Room",
     "Locations": {
-        "Kresge": {
-            "Body": "This is Kresge College, lots of nice trees.",
+        "Your Room": {
+            "Body": "Testing: Your Room Body",
             "Choices": [
                 {
-                    "Text": "South",
-                    "Target": "Porter"
+                    "Text": "==>go forth!",
+                    "Target": "Hallway"
                 }
             ]
         },
-        "Porter": {
-            "Body": "This is Porter College, the trees are nice here too.",
+        "Hallway": {
+            "Body": "Testing: Hallway Body",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Kresge"
+                    "Text": "take refuge",
+                    "Target": "Your Room"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Rachel Carson"
-                }
-            ]
-        },
-        "Rachel Carson": {
-            "Body": "Rachel Carson College, more sun and fewer trees.",
-            "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Porter"
+                    "Text": "ascend",
+                    "Target": "Attic"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Oakes"
-                }
-            ]
-        },
-        "Oakes": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
-            "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Text": "temp go to bathroom",
+                    "Target": "Bathroom"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Beyond"
+                    "Text": "temp go to mom's room",
+                    "Target": "Mom's Room"
+                },
+                {
+                    "Text": "descend",
+                    "Target": "Downstairs"
                 }
             ]
         },
-        "Beyond": {
-            "Body": "Grass, don't forget to check for ticks!"
+        "Attic": {
+            "Body": "Testing: Attic Body, implement lock",
+            "Choices": [
+                {
+                    "Text": "exit",
+                    "Target": "Hallway"
+                }
+            ]
+        },
+        "Bathroom": {
+            "Body": "Testing: Bathroom Body",
+            "Choices": [
+                {
+                    "Text": "exit",
+                    "Target": "Hallway"
+                }
+            ]
+        },
+        "Mom's Room": {
+            "Body": "Testing: Mom's Room Body",
+            "Choices": [
+                {
+                    "Text": "exit",
+                    "Target": "Hallway"
+                }
+            ]
+        },
+        "Downstairs": {
+            "Body": "Testing: Downstairs Body",
+            "Choices": [
+                {
+                    "Text": "ascend",
+                    "Target": "Hallway"
+                },
+                {
+                    "Text": "temp go to living room",
+                    "Target": "Living Room"
+                },
+                {
+                    "Text": "temp go to kitchen",
+                    "Target": "Kitchen"
+                }
+            ]
+        },
+        "Living Room": {
+            "Body": "Testing: Living Room Body",
+            "Choices": [
+                {
+                    "Text": "retreat",
+                    "Target": "Downstairs"
+                },
+                {
+                    "Text": "temp go to backyard",
+                    "Target": "Backyard"
+                },
+                {
+                    "Text": "==>temp go to the study",
+                    "Target": "The Study"
+                }
+            ]
+        },
+        "Backyard": {
+            "Body": "Testing: Backyard Body",
+            "Choices": [
+                {
+                    "Text": "==>return",
+                    "Target": "Living Room"
+                }
+            ]
+        },
+        "The Study": {
+            "Body": "Testing: Study Body",
+            "Choices": [
+                {
+                    "Text": "return",
+                    "Target": "Living Room"
+                }
+            ]
+        },
+        "Kitchen": {
+            "Body": "Testing: Kitchen Body",
+            "Choices": [
+                {
+                    "Text": "retreat",
+                    "Target": "Downstairs"
+                },
+                {
+                    "Text": "==>temp go to tool closet",
+                    "Target": "Tool Closet"
+                }
+            ]
+        },
+        "Tool Closet": {
+            "Body": "Testing: Tool Closet Body",
+            "Choices": [
+                {
+                    "Text": "back",
+                    "Target": "Kitchen"
+                }
+            ]
         }
     }
 }
