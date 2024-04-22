@@ -34,6 +34,17 @@ class Location extends Scene {
     }
 }
 
+class Interaction extends Location {
+
+    create() {
+
+    }
+
+    handleChoice(choice){
+
+    }
+}
+
 class End extends Scene {
     create() {
         this.engine.show("<hr>");
